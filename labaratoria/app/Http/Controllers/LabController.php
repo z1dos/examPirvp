@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Labaratoria;
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Nette\Schema\ValidationException;
 
@@ -18,7 +19,10 @@ class LabController extends Controller
 
     public function createView()
     {
-        return view('create');
+        $posts = Post::all();
+        return view('create', [
+            'posts' => $posts,
+        ]);
     }
 
     public function store()

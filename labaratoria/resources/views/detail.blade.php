@@ -4,6 +4,7 @@
     <div>
             <div>
                 <h2>Работник номер-{{$peoples->id}}</h2>
+                <h3>Долженость -{{$peoples->post}}</h3>
                 <p>Фамилия:{{$peoples->surname}}</p>
                 <p>Имя:{{$peoples->name}}</p>
                 <p>Отчество {{$peoples->lastname}}</p>

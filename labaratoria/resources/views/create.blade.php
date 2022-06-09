@@ -40,11 +40,9 @@
             <div>
                 <label for="post">Должность</label>
                 <select name="post">
-                    <option>Заведующий лабораторией</option>
-                    <option>Инженер-исследователь</option>
-                    <option>Инженер-лаборант</option>
-                    <option>Техник-лаборант</option>
-                    <option>Лаборант</option>
+                    @foreach($posts as $post)
+                        <option>{{$post->title}}</option>
+                    @endforeach
                 </select>
             </div>
             <div>

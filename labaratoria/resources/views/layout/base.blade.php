@@ -12,6 +12,7 @@
 <div class="header-base">
     <h2><a href="/">Главная страница</a></h2>
     <h2><a href="create">Создать заявку</a></h2>
+    <h2><a href="create-post">Добавить должность</a></h2>
 </div>
 
 <div>

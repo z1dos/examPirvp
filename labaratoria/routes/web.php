@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\LabController::class, 'index']);
 Route::get('create', [App\Http\Controllers\LabController::class, 'createView']);
+Route::get('create-post', [App\Http\Controllers\PostContoller::class, 'createPostView']);
 Route::get('detail/{people}', [App\Http\Controllers\LabController::class, 'detail']);
 Route::get('delete/{people}', [App\Http\Controllers\LabController::class, 'delete']);
 Route::post('store-action', [App\Http\Controllers\LabController::class, 'store']);
+Route::post('create-post-form', [App\Http\Controllers\PostContoller::class, 'store']);
